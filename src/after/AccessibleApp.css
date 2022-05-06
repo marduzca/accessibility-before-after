@@ -1,0 +1,50 @@
+.mainContainer {
+    margin: 2rem;
+}
+
+.header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.header > img {
+    height: 4rem;
+}
+
+.heading {
+    font-size: 3rem;
+}
+
+.subHeading {
+    font-size: 2rem;
+}
+
+.subSubHeading {
+    font-size: 1rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form > input, textarea {
+    margin-bottom: 0.5rem;
+}
+
+.message {
+    height: 5rem;
+    resize: none;
+}
+
+button {
+    background-color: salmon;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-family: "Roboto", Roboto, serif;
+    font-size: 1rem;
+}
