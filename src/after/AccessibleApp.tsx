@@ -4,7 +4,7 @@ import chocolate from '../before/chocolate.svg';
 
 
 const AccessibleApp = () => {
-    const dialogRef = useRef(null);
+    const dialogRef = useRef<HTMLDialogElement>(null);
 
     const [name, setName] = useState<string>('')
     const [email, setEmail] = useState<string>('')
@@ -31,14 +31,14 @@ const AccessibleApp = () => {
                 <img className="chocolate" src={chocolate} alt="Chocolate bar" aria-hidden="true"/>
                 <h1 className="heading">Willy Wonka's Chocolate Factory</h1>
             </header>
-            <section>
-                <h2 className="subHeading">What we do</h2>
+            <section aria-labelledby='what-we-do'>
+                <h2 id='what-we-do' className="subHeading">What we do</h2>
                 <p>We make the best chocolate out there since 1971. Also we have lots of fun singing!</p>
                 <p> With the craziest CEO out there, the infamous WILLY WONKA!</p>
             </section>
 
-            <section>
-                <h3 className="subSubHeading">Our chocolate making process</h3>
+            <section aria-labelledby='process'>
+                <h3 id='process' className="subSubHeading">Our chocolate making process</h3>
                 <section>
                     <ul>
                         <li>Prepare a big bowl</li>
@@ -49,8 +49,8 @@ const AccessibleApp = () => {
                 </section>
             </section>
 
-            <section>
-                <h2 className="subHeading">Career</h2>
+            <section aria-labelledby='career'>
+                <h2 id='career' className="subHeading">Career</h2>
                 <section>
                     <details>
                         <summary>Available jobs</summary>
@@ -63,8 +63,8 @@ const AccessibleApp = () => {
                 </section>
             </section>
 
-            <section>
-                <h2 className="subHeading">Contact</h2>
+            <section aria-labelledby='contact'>
+                <h2 id='contact' className="subHeading">Contact</h2>
                 <form className="form" onSubmit={handleSubmit}>
                     <label htmlFor="name">Name</label>
                     <input required id="name" type="text" name="name" value={name} onChange={(event) => {

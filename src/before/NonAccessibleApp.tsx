@@ -2,8 +2,8 @@ import React, {useRef, useState} from 'react';
 import './App.css';
 import chocolate from "./chocolate.svg";
 
-const App = () => {
-    const dialogRef = useRef(null);
+const NonAccessibleApp = () => {
+    const dialogRef = useRef<HTMLDialogElement>(null);
 
     const [name, setName] = useState<string>('');
     const [email, setEmail] = useState<string>('');
@@ -97,4 +97,4 @@ const App = () => {
     );
 };
 
-export default App;
+export default NonAccessibleApp;
