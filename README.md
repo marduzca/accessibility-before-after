@@ -1,6 +1,5 @@
-# Session
-1. One to the front (blind). Use page with screen reader. Tell me what it is about
-2. Second one (no hands) -> Try to send a message
+# Accessibility training session
+Show a bad example and improve it gradually while learning basic accessibility concepts like Focus, Semantic and Aria.
 
 
 ## Focus
